@@ -1,0 +1,20 @@
+{
+    "name": "233cy/hyperf-tenant",
+    "description": "为hyperf写的单表多租户字段版。",
+    "autoload": {
+        "psr-4": {
+            "Database\\Tenant\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "233cy",
+            "email": "wfuren@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "hyperf/database": ">=2.2",
+        "hyperf/db-connection": ">=2.2"
+    }
+}
