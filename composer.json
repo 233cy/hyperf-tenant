@@ -14,7 +14,7 @@
     ],
     "require": {
         "php": ">=8.0",
-        "hyperf/database": ">=2.2",
-        "hyperf/db-connection": ">=2.2"
+        "hyperf/database": ">=3",
+        "hyperf/db-connection": ">=3"
     }
 }
