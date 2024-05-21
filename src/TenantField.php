@@ -53,7 +53,7 @@ trait TenantField
         if (property_exists($this, 'tenant')) {
             $column = $this->tenant;
         }
-        return $column;
+        return $this->qualifyColumn($column);
     }
 
     /**
