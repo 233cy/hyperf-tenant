@@ -45,7 +45,7 @@ trait TenantField
     /**
      * 获取带数据表的租户字段。
      *
-     * @return string
+     * @return string|null
      */
     public function getQualifiedTenantIdColumn(): ?string
     {
