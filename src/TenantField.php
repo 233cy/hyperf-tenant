@@ -47,11 +47,14 @@ trait TenantField
      *
      * @return string
      */
-    public function getQualifiedTenantIdColumn(): string
+    public function getQualifiedTenantIdColumn(): ?string
     {
         $column = 'tenant_id';
         if (property_exists($this, 'tenant')) {
             $column = $this->tenant;
+        }
+        if ($column === null) {
+            return null;
         }
         return $this->qualifyColumn($column);
     }
